@@ -24,7 +24,7 @@ export const metadata = {
     follow: false,
   },
   verification: {
-    google: "kdjDZPVMKUUfm3R6KLFAz5GmXLBX2xSPaokpF6YzdF0",
+    google: "TXEQWBGNRYvDJ7BZCdP8hyCYGt1qhBiKZQUZV3yd0AY",
   },
 };
 
@@ -39,7 +39,7 @@ export default function RootLayout({ children }) {
       <body>
         <noscript>
           <iframe
-            src="https://www.googletagmanager.com/ns.html?id=GTM-KKLN5GJS"
+            src="https://www.googletagmanager.com/ns.html?id=GTM-5RDNVH5C"
             height="0"
             width="0"
             style={{ display: "none", visibility: "hidden" }}
@@ -52,7 +52,7 @@ export default function RootLayout({ children }) {
 
         <Script
           id="google-gtag-loader"
-          src="https://www.googletagmanager.com/gtag/js?id=G-XL99K59785"
+          src="https://www.googletagmanager.com/gtag/js?id=G-9M0KGY3ZDY"
           strategy="beforeInteractive"
         />
         <Script id="google-gtag-config" strategy="beforeInteractive">
@@ -60,7 +60,7 @@ export default function RootLayout({ children }) {
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'G-XL99K59785');
+            gtag('config', 'G-9M0KGY3ZDY');
           `}
         </Script>
         <Script id="google-tag-manager" strategy="beforeInteractive">
@@ -69,7 +69,7 @@ export default function RootLayout({ children }) {
             new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
             j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-            })(window,document,'script','dataLayer','GTM-KKLN5GJS');
+            })(window,document,'script','dataLayer','GTM-5RDNVH5C');
           `}
         </Script>
         <Script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=e3f979f5-27f6-46fa-8a12-378d2c7089aa" strategy="afterInteractive" />
