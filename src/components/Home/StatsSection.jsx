@@ -12,7 +12,7 @@ const statsData = [
 const StatsSection = () => {
   return (
     <GlobalStatsSection
-      heading="A Trusted Explainer Video AgencyFor SaaS, Product And Brand Storytelling."
+      heading="A Trusted Explainer Video Agency For SaaS, Product And Brand Storytelling."
       statsData={statsData}
       variant="default"
     />
