@@ -10,6 +10,13 @@ import PortfolioShowcase from "@/components/OurWork/PortfolioShowcase";
 export const metadata = {
   title: "Explainer Video Portfolio | Our Work | Explainer Video Agency",
   description: "Browse the explainer video portfolio of one of the best explainer video agencies. SaaS, product, app demo, whiteboard and 3D explainer video services on screen.",
+  alternates: {
+    canonical: "/our-work",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function OurWork() {

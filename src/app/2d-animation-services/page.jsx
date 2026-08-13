@@ -16,6 +16,13 @@ import FaqSection from "@/components/Animation2D/FaqSection";
 export const metadata = {
   title: "Creative 2D Animation Services in the USA | Explainer Video Company.",
   description: "Looking for high-quality 2D animations services for your business? Explainer Video Agencyoffers comprehensive 2D animation production services at a competitive price.",
+  alternates: {
+    canonical: "/2d-animation-services",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function TwoDAnimation() {

@@ -11,6 +11,13 @@ import FaqSection from "@/components/About/FaqSection";
 export const metadata = {
   title: "About Us - Inside Our Professional Explainer Video Studio",
   description: "Learn about the Mission & Vision behind Explainer Video Agency, a professional explainer video studio producing SaaS and product explainer videos worldwide.",
+  alternates: {
+    canonical: "/about-us",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function AboutUs() {

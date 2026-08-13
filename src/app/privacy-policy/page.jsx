@@ -5,6 +5,13 @@ import styles from "./page.module.css";
 export const metadata = {
   title: "Privacy Policy - Explainer Video Company",
   description: "Privacy Policy for Explainer Video Company. Learn how we collect, use, and protect your personal information.",
+  alternates: {
+    canonical: "/privacy-policy",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function PrivacyPolicyPage() {

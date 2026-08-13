@@ -19,9 +19,13 @@ const lexend = Lexend({
 export const metadata = {
   title: "Explainer Video Company",
   description: "Award-Winning Digital Agency",
+  metadataBase: new URL("https://www.pixelstudiosinc.com"),
+  alternates: {
+    canonical: "/",
+  },
   robots: {
-    index: false,
-    follow: false,
+    index: true,
+    follow: true,
   },
   verification: {
     google: "TXEQWBGNRYvDJ7BZCdP8hyCYGt1qhBiKZQUZV3yd0AY",
@@ -34,9 +38,35 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${inter.variable} ${lexend.variable}`}>
       <head>
+        {/* Google tag (gtag.js) */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-9M0KGY3ZDY"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-9M0KGY3ZDY');
+            `
+          }}
+        />
+
+        {/* Google Tag Manager */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+              new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+              j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+              'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+              })(window,document,'script','dataLayer','GTM-5RDNVH5C');
+            `
+          }}
+        />
         <CanonicalLink />
       </head>
       <body>
+        {/* Google Tag Manager (noscript) */}
         <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-5RDNVH5C"
@@ -50,28 +80,6 @@ export default function RootLayout({ children }) {
         <Footer />
         <GlobalPopup />
 
-        <Script
-          id="google-gtag-loader"
-          src="https://www.googletagmanager.com/gtag/js?id=G-9M0KGY3ZDY"
-          strategy="beforeInteractive"
-        />
-        <Script id="google-gtag-config" strategy="beforeInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-9M0KGY3ZDY');
-          `}
-        </Script>
-        <Script id="google-tag-manager" strategy="beforeInteractive">
-          {`
-            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-            })(window,document,'script','dataLayer','GTM-5RDNVH5C');
-          `}
-        </Script>
         <Script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=e3f979f5-27f6-46fa-8a12-378d2c7089aa" strategy="afterInteractive" />
         <Script id="zopim-init" strategy="afterInteractive">
           {`

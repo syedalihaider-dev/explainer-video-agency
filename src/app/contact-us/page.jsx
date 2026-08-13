@@ -5,7 +5,14 @@ export const metadata = {
   title: "Contact Us - Get An Explainer Video Quote In Less Than 24 Hours",
   description: "Talk to an explainer video strategist. Send your brief and get a cost quote within 24 hours from a professional explainer video studio serving globally.",
   keywords: "",
-}
+  alternates: {
+    canonical: "/contact-us",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
 
 export default function ContactUsPage() {
   return (

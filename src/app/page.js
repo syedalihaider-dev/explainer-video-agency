@@ -29,8 +29,15 @@ const bannerSlides = [
 */
 
 export const metadata = {
-  title: "Best Explainer Video Agency- Explainer Video Agency",
-  description: "Explainer Video Agency is a professional Explainer Video Agencyproducing SaaS, product and animated explainer videos that makes your product & business easier to explain.",
+  title: "Best Explainer Video Agency Explainer Video Agency",
+  description: "Explainer Video Agency is a professional Explainer Video Agency producing SaaS, product and animated explainer videos that makes your product & business easier to explain.",
+  alternates: {
+    canonical: "/",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function Home() {

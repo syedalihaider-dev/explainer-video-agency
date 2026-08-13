@@ -5,6 +5,13 @@ import styles from "./page.module.css";
 export const metadata = {
   title: "Terms and Conditions - Explainer Video Company",
   description: "Terms and Conditions for Explainer Video Company. Read the rules and regulations governing the use of our services.",
+  alternates: {
+    canonical: "/terms-and-conditions",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function TermsAndConditionsPage() {
