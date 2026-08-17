@@ -19,7 +19,7 @@ const lexend = Lexend({
 export const metadata = {
   title: "Explainer Video Company",
   description: "Award-Winning Digital Agency",
-  metadataBase: new URL("https://www.pixelstudiosinc.com"),
+  metadataBase: new URL("https://www.explainervideoscompany.com"),
   alternates: {
     canonical: "/",
   },
