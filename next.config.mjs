@@ -4,6 +4,21 @@ const nextConfig = {
 
   async redirects() {
     return [
+      // =========================
+      // Blog Subdomain Redirects (301)
+      // =========================
+      {
+        source: "/animation-service",
+        has: [
+          {
+            type: "host",
+            value: "blog.explainervideoscompany.com",
+          },
+        ],
+        destination: "https://www.explainervideoscompany.com/",
+        permanent: true,
+      },
+
       // Home (301)
       {
         source: "/animation-service",

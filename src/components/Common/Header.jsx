@@ -157,6 +157,7 @@ const navData = [
     //   // { name: 'CASE STUDIES', path: '/case-study' },
     // ]
   },
+  { name: 'BLOG', path: '/blog' },
   { name: 'CONTACT US', path: '/contact-us' },
 ];
 
