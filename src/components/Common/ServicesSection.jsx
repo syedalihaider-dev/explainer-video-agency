@@ -12,9 +12,11 @@ const swipePower = (offset, velocity) => {
 };
 
 const ServicesSection = ({
+  eyebrow = "OUR SERVICES",
   title,
   description,
-  sliderItems = []
+  sliderItems = [],
+  bottomCta,
 }) => {
   const [page, setPage] = useState([0, 0]);
   const [isHovered, setIsHovered] = useState(false);
@@ -74,7 +76,7 @@ const ServicesSection = ({
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h6 className="subtitle">OUR SERVICES</h6>
+          <h6 className="subtitle">{eyebrow}</h6>
           <h2 className={styles.title}>{title}</h2>
           <p className={styles.description}>{description}</p>
         </motion.div>
@@ -175,6 +177,16 @@ const ServicesSection = ({
             <ArrowRight size={22} />
           </button>
         </div>
+
+        {bottomCta && (
+          <div style={{ display: 'flex', justifyContent: 'center', marginTop: '35px' }}>
+            <CTAButton
+              text={typeof bottomCta === 'string' ? bottomCta : bottomCta.text}
+              type={bottomCta.type || 'popup'}
+              href={bottomCta.href || '#'}
+            />
+          </div>
+        )}
 
       </div>
     </section>
