@@ -11,6 +11,16 @@ import CTAButton from './CTAButton';
 const navData = [
   { name: 'HOME', path: '/' },
   { name: 'ABOUT US', path: '/about-us' },
+  {
+    name: 'SERVICES',
+    path: '#',
+    isDropdown: true,
+    items: [
+      { name: '2D Explainer Video', path: '/2d-explainer-videos' },
+      { name: '3D Explainer Video', path: '/3d-explainer-video-company' },
+      { name: 'SaaS Explainer Video', path: '/saas-explainer-video-company' },
+    ]
+  },
   // {
   //   name: 'SERVICES',
   //   path: '#',

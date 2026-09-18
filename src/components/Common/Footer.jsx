@@ -22,21 +22,21 @@ const Footer = () => {
     { name: 'CONTACT US', path: '/contact-us' },
   ];
 
-  // const serviceLinks = [
-  // { name: '2D Animation', path: '/2d-animation-services' },
-  // { name: '3D Animation', path: '/3d-animation-services' },
-  // { name: 'Video Editing', path: '#' },
-  // { name: 'Logo Animation', path: '/logo-animation-services' },
-  // { name: 'AI-Assisted Animations', path: '#' },
-  // { name: 'Infographics', path: '#' },
-  // { name: 'Whiteboard Animation', path: '/whiteboard-animation-services' },
-  // { name: 'Architectural Visualization', path: '#' },
-  // { name: 'Legal Animation', path: '#' },
-  // { name: 'Hybrid & Cel Animation', path: '#' },
-  // { name: 'Motion Graphics', path: '/motion-graphics' },
-  // { name: 'CGI & VFX', path: '#' },
-  // { name: '2D & 3D Explainer Videos', path: '#' },
-  // ];
+  const serviceLinks = [
+    { name: '2D Explainer Video', path: '/2d-explainer-videos' },
+    { name: '3D Explainer Video', path: '/3d-explainer-video-company' },
+    { name: 'SaaS Explainer Video', path: '/saas-explainer-video-company' },
+    // { name: 'Logo Animation', path: '/logo-animation-services' },
+    // { name: 'AI-Assisted Animations', path: '#' },
+    // { name: 'Infographics', path: '#' },
+    // { name: 'Whiteboard Animation', path: '/whiteboard-animation-services' },
+    // { name: 'Architectural Visualization', path: '#' },
+    // { name: 'Legal Animation', path: '#' },
+    // { name: 'Hybrid & Cel Animation', path: '#' },
+    // { name: 'Motion Graphics', path: '/motion-graphics' },
+    // { name: 'CGI & VFX', path: '#' },
+    // { name: '2D & 3D Explainer Videos', path: '#' },
+  ];
 
   return (
     <footer className={styles.footerContainer}>
@@ -71,7 +71,7 @@ const Footer = () => {
           </div>
 
           {/* Column 3: Services Links */}
-          {/* <div className={`${styles.footerCol} ${styles.servicesCol}`}>
+          <div className={`${styles.footerCol} ${styles.servicesCol}`}>
             <h3 className={styles.heading}>Services Links</h3>
             <ul className={styles.servicesList}>
               {serviceLinks.map((link, index) => (
@@ -80,7 +80,7 @@ const Footer = () => {
                 </li>
               ))}
             </ul>
-          </div> */}
+          </div>
 
           {/* Column 4: Contact Info */}
           <div className={styles.footerCol}>
