@@ -42,7 +42,6 @@ export default function StatsSection({
       <div className="container">
         <div className="row align-items-center">
 
-          {/* Left Heading */}
           <div className="col-md-6 col-lg-5 mb-4 mb-lg-0">
             <motion.div
               initial="hidden"
@@ -95,7 +94,6 @@ export default function StatsSection({
               ))}
             </motion.div>
           </div>
-
         </div>
       </div>
     </section>
